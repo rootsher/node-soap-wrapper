@@ -3,8 +3,8 @@ var nodefn = require('when/node');
 
 
 function NodeSOAPWrapper() {
-	this._url = undefined;
-	this._options = undefined;
+    this._url = undefined;
+    this._options = undefined;
 }
 
 /**
@@ -12,21 +12,21 @@ function NodeSOAPWrapper() {
  * @param {Object} options
  */
 NodeSOAPWrapper.prototype.createClient = function (url, options) {
-	this._url = url;
-	this._options = options || {};
+    this._url = url;
+    this._options = options || {};
 
-	var promisedCreateClient = nodefn.call(soap.createClient, this._url, this._options);
+    var promisedCreateClient = nodefn.call(soap.createClient, this._url, this._options);
 
-	return promisedCreateClient;
+    return promisedCreateClient;
 }
 
 /**
  * @param {Object} client
  */
 NodeSOAPWrapper.prototype.liftAll = function (client) {
-	var lift = nodefn.liftAll(client);
+    var lift = nodefn.liftAll(client);
 
-	return lift;
+    return lift;
 };
 
 

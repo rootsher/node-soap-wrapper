@@ -1,0 +1,19 @@
+{
+    "name": "node-soap-wrapper",
+    "version": "0.1.0",
+    "author": "Konrad Kowalski <rootsher@gmail.com>",
+    "description": "Wrapper for Simple Object Access Protocol using promises.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rootsher/node-soap-wrapper.git"
+    },
+    "keywords": [
+        "soap",
+        "wrapper",
+        "promises"
+    ],
+    "dependencies": {
+        "soap": "0.5.x",
+        "when": "3.4.x"
+    }
+}
